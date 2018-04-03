@@ -6,8 +6,8 @@ function Player(game){
     this.y = 100;
     this.width = 150;
     this.height = 120;
-    this.vx = 20;
-    this.vy = 20;    
+    this.vx = 37;
+    this.vy = 37;    
     this.ondaVital = [];
 }
 Player.prototype.draw = function(){
