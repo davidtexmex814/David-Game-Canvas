@@ -4,6 +4,7 @@ function Background(game) {
     this.game = game;
     this.img = new Image();
     this.img.src = "./img/700_FO70389289_032c59c6f16430f8eca95b87db38ec83.jpg";
+    this.dx = 7;
 };
 
 
