@@ -8,12 +8,10 @@ function Player(game){
     this.height = 120;
     this.vx = 37;
     this.vy = 37;    
-    this.ondaVital = [];
 }
 Player.prototype.draw = function(){
     this.game.ctx.drawImage(this.img, this.x ,this.y, this.width, this.height);
 };
-
 Player.prototype.move = function () {
 document.onkeydown = function(event) {
     switch (event.keyCode) {
@@ -28,9 +26,6 @@ document.onkeydown = function(event) {
          break;
         case 40:
          this.y += this.vy; 
-         break; 
-        case 75:
-         this.game.generateKamehameha();
          break;  
         };
     }.bind(this);

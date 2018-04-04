@@ -3,12 +3,12 @@ function Background(game) {
     this.y = 0;
     this.game = game;
     this.img = new Image();
-    this.img.src = "./img/700_FO70389289_032c59c6f16430f8eca95b87db38ec83.jpg";
-    this.dx = 7;
+    this.img.src = "./img/2357b7cd4c3f310.jpg";
 };
 
 
 Background.prototype.draw = function() {
+    
     if(this.x++ > this.game.canvas.width){
       this.x = 0;
     }

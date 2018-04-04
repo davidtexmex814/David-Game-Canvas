@@ -1,0 +1,18 @@
+h1 {
+    margin: 10px 0px 0px 380px;
+    font-size: 100px;
+}
+.pierdes {
+    margin: 30px 0px 0px 550px;
+    font-size: 40px;
+}
+.malo {
+    margin: 10px 0px 0px 200px;
+    font-size: 20px;
+}
+.imagen {
+    margin: 50px 0px 0px 432px;
+    background-image: url("/Users/davidmolina814/IRONHACK-BOOTCAMP/mijuegoDavid original/img/giphy.gif");
+    width: 495px;
+    height: 288px;
+}
