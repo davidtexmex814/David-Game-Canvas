@@ -7,30 +7,20 @@ function Player(game){
     this.height = 120;
     this.img = new Image();
     this.img.src = "./img/cf2670330a0fd89012d5ad5004d23187.png";
-    this.vx = 37;
-    this.vy = 37;    
+    this.vx = 40;
+    this.vy = 40;    
 }
 Player.prototype.draw = function(){
     this.game.ctx.drawImage(this.img, this.x ,this.y, this.width, this.height);
 };
-Player.prototype.teclas = function () {
-document.onkeydown = function(event) {
-    switch (event.keyCode) {
-        case 37:
-         this.x -= this.vx;
-         break;
-        case 38:
-         this.y -= this.vy; 
-         break;
-        case 39:
-         this.x += this.vx; 
-         break;
-        case 40:
-         this.y += this.vy; 
-         break; 
-        case 16:
-         this.game.createKamehameha();
-         break;
+Player.prototype.keyboard = function () {
+    document.onkeydown = function(event) {
+        switch (event.keyCode) {
+            case 37: this.x -= this.vx; break;
+            case 38: this.y -= this.vy; break;
+            case 39: this.x += this.vx; break;
+            case 40: this.y += this.vy; break; 
+            case 16: this.game.createKamehameha(); break;
         };
     }.bind(this);
 };

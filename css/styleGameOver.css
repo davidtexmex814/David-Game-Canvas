@@ -3,11 +3,11 @@ h1 {
     font-size: 100px;
 }
 .pierdes {
-    margin: 30px 0px 0px 550px;
+    margin: 30px 0px 0px 560px;
     font-size: 40px;
 }
 .malo {
-    margin: 10px 0px 0px 200px;
+    margin: 10px 0px 0px 395px;
     font-size: 20px;
 }
 .imagen {
@@ -15,4 +15,7 @@ h1 {
     background-image: url("/Users/davidmolina814/IRONHACK-BOOTCAMP/mijuegoDavid original/img/giphy.gif");
     width: 495px;
     height: 288px;
+}
+.inicio {
+    margin: 30px 0px 0px 460px;
 }

@@ -5,7 +5,6 @@ function Kamehameha(game){
     this.r = 70;
     this.vx = 5;
 };
-
 Kamehameha.prototype.draw = function(){
         this.game.ctx.beginPath();
         this.game.ctx.fillStyle = "blue";

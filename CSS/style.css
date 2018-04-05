@@ -1,18 +1,11 @@
 canvas {
-    border: solid black;
-    margin: 100px;
+    border: solid white;
+    margin: 110px 0px 0px 95px;
 }
 body {
     background: url("/Users/davidmolina814/Desktop/myJuegoCanvas/img/etiquetas-volta-as-aulas-dragon-ball-super-4.jpg");
     background-size: cover;
 } 
-.title{
-    margin: -18px 0 0 290px;
-    color: skyblue;
-    background-image: url("/Users/davidmolina814/Desktop/myJuegoCanvas/img/700_FO70389289_032c59c6f16430f8eca95b87db38ec83.jpg");
-    width: 801px;
-    height: 40px;
-}  
-.inicio {
-    margin: -97px 0px 0 414px;
-} 
+.inicia {
+    margin: -540px 0px 0 1045px;
+}

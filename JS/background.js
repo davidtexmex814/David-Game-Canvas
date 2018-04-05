@@ -5,10 +5,7 @@ function Background(game) {
     this.img = new Image();
     this.img.src = "./img/2357b7cd4c3f310.jpg";
 };
-
-
 Background.prototype.draw = function() {
-    
     if(this.x++ > this.game.canvas.width){
       this.x = 0;
     }
