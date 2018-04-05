@@ -10,6 +10,7 @@ function Enemy(game,x,y) {
 Enemy.prototype.draw = function() {
     this.game.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
 };
-Enemy.prototype.move = function(){
+Enemy.prototype.moverEnemy = function(){
     this.x += 2;
+
 }

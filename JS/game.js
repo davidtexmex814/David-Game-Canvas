@@ -11,7 +11,7 @@ Game.prototype.start = function(){
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.draw();
         this.move();
-        if (this.collision()) {this.gameOver();}
+        this.collision();
     }.bind(this), 100/60);
     this.createEnemy();
 };
@@ -24,18 +24,7 @@ Game.prototype.draw = function(){
 Game.prototype.move = function(){
     this.player.keyboard();
     this.ondaVital.forEach(function(kamehameha){kamehameha.moverKamehameha();})
-    this.enemies.forEach(function(enemy){enemy.move();});
-};
-Game.prototype.collision = function() {
-    this.enemies.forEach(function(enemy){
-        if (this.player.x +60 < enemy.x + enemy.width  && this.player.x -60 + this.player.width  > enemy.x &&
-            this.player.y +60 < enemy.y + enemy.height && this.player.y -70 + this.player.height > enemy.y) {
-                return this.gameOver();
-    }
-  }.bind(this));   
-}
-Game.prototype.gameOver = function(){
-        window.location.href = "./gameOver.html";  
+    this.enemies.forEach(function(enemy){enemy.moverEnemy();});
 };
 Game.prototype.createKamehameha = function () {
     this.ondaVital.push(new Kamehameha (this))
@@ -55,3 +44,19 @@ Game.prototype.eliminateEnemy = function(){
         return enemy.x < this.canvas.width
     })
 }
+Game.prototype.collision = function() {
+    this.enemies.forEach(function(enemy){
+        if (this.player.x +60 < enemy.x + enemy.width  && this.player.x -60 + this.player.width  > enemy.x &&
+            this.player.y +60 < enemy.y + enemy.height && this.player.y -70 + this.player.height > enemy.y) {
+                return this.gameOver();
+    }
+    this.ondaVital.forEach(function(onda){
+     if (onda.x +60 < enemy.x + enemy.width  && onda.x -60 + onda.width  > enemy.x &&
+        onda.y +60 < enemy.y + enemy.height && onda.y -70 + onda.height > enemy.y) {
+             this.enemies.splice(this.enemies.indexOf(enemy),1);}
+    }.bind(this));
+  }.bind(this));   
+}
+Game.prototype.gameOver = function(){
+    window.location.href = "./gameOver.html";  
+};
