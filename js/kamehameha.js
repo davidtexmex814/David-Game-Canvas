@@ -7,7 +7,7 @@ function Kamehameha(game){
     this.vx = 4;
 
     this.img = new Image();
-    this.img.src = "./img/kamehameha_style_blue_png_by_lewildgoku-d5wny3l.png"
+    this.img.src = "img/kamehameha_style_blue_png_by_lewildgoku-d5wny3l.png"
 };
 Kamehameha.prototype.draw = function(){
         

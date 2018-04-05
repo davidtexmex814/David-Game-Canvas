@@ -5,7 +5,7 @@ function Player(game){
     this.width = 150;
     this.height = 120;
     this.img = new Image();
-    this.img.src = "./img/cf2670330a0fd89012d5ad5004d23187.png";
+    this.img.src = "img/cf2670330a0fd89012d5ad5004d23187.png";
     this.vx = 50;
     this.vy = 50;
 }
